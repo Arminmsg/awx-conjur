@@ -7,3 +7,7 @@
   - name: Print debug message
     debug:
       msg: New Message!
+  - name: Lookup variable in Conjur
+	debug:
+	  msg: "{{ lookup('cyberark.conjur.conjur_variable', 'data/vault/Armin-conjur/Certificates-Certificates/password') }}"
+
