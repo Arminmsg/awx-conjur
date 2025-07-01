@@ -7,7 +7,7 @@
   - name: Print debug message
     debug:
       msg: New Message!
-  - name: Print Conjur Secret
-    debug:
-      "Username: {{ ansible_ssh_pass }}"
+  - debug:
+      var: vars
+
 
