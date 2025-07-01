@@ -9,5 +9,5 @@
       msg: New Message!
   - name: Print Conjur Secret
     debug:
-      "Username: {{ conjur_username }}"
+      "Username: {{ ansible_ssh_pass }}"
 
