@@ -9,5 +9,5 @@
       msg: New Message!
   - name: Print Conjur Secret
     debug:
-      "Password: {{ password }} | Username: {{ username }}"
+      "Username: {{ username }}"
 
