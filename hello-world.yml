@@ -1,13 +1,13 @@
 # This playbook prints a simple debug message
 - name: Echo 
-  hosts: 127.0.0.1
+  hosts: localhost
   connection: local
 
   tasks:
   - name: Print debug message
     debug:
       msg: New Message!
-  - name: Lookup variable in Conjurdebug
+  - name: Print Conjur Secret
     debug:
-      msg: "{{ lookup('cyberark.conjur.conjur_variable', 'data/vault/Armin-conjur/Certificates-Certificates/password') }}"
+      "Password: {{ password }} | Username: {{ username }}"
 
