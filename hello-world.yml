@@ -7,7 +7,9 @@
   - name: Print debug message
     debug:
       msg: New Message!
-  - debug:
-      var: vars
+  - name: Show SSH username
+    debug:
+      msg: "SSH Username: {{ ansible_user }}"
+
 
 
